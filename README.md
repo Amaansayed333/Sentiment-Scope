@@ -31,19 +31,20 @@ Docker - Containerization (optional)
 1. Python Environment
 # Create virtual environment
 python -m venv sentiment-env
-source sentiment-env/bin/activate  # On Windows: sentiment-env\Scripts\activate
+source sentiment-env/bin/activate  
+# On Windows: sentiment-env\Scripts\activate
 
 # Upgrade pip
 pip install --upgrade pip
 
 2. Install Dependencies
-3. pip install streamlit==1.28.0
-pip install transformers==4.34.0
-pip install torch==2.0.1
-pip install pandas==2.0.3
-pip install plotly==5.17.0
-pip install praw==7.7.1
-pip install python-dotenv==1.0.0
-pip install wordcloud==1.9.2
-pip install vaderSentiment==3.3.2
-pip install textblob==0.17.1
+  pip install streamlit==1.28.0
+  pip install transformers==4.34.0
+  pip install torch==2.0.1
+  pip install pandas==2.0.3
+  pip install plotly==5.17.0
+  pip install praw==7.7.1
+  pip install python-dotenv==1.0.0
+  pip install wordcloud==1.9.2
+  pip install vaderSentiment==3.3.2
+  pip install textblob==0.17.1
