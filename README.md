@@ -31,23 +31,28 @@ Streamlit Cloud - Free hosting
 GitHub Actions - CI/CD pipeline
 Docker - Containerization (optional)
 
-1. Python Environment
-# Create virtual environment
-python -m venv sentiment-env
-source sentiment-env/bin/activate  
-# On Windows: sentiment-env\Scripts\activate
+⚡ Setup Instructions
 
-# Upgrade pip
-pip install --upgrade pip
+1.Clone the repo
+git clone https://github.com/Amaansayed333/Sentiment-Scope.git
+cd Sentiment-Scope
 
-2. Install Dependencies
-  pip install streamlit==1.28.0
-  pip install transformers==4.34.0
-  pip install torch==2.0.1
-  pip install pandas==2.0.3
-  pip install plotly==5.17.0
-  pip install praw==7.7.1
-  pip install python-dotenv==1.0.0
-  pip install wordcloud==1.9.2
-  pip install vaderSentiment==3.3.2
-  pip install textblob==0.17.1
+2.Create Virtual Environment
+python -m venv myenv
+myenv\Scripts\activate     # Windows
+source myenv/bin/activate  # Linux / Mac
+
+3.Install dependencies
+pip install -r requirements.txt
+
+4.Setup Reddit API Credentials
+Create an app at Reddit Apps
+Copy client_id, client_secret, user_agent
+Create .env file:
+
+REDDIT_CLIENT_ID=your_client_id
+REDDIT_CLIENT_SECRET=your_client_secret
+REDDIT_USER_AGENT=your_user_agent
+
+5.Run the dashboard
+streamlit run app.py
